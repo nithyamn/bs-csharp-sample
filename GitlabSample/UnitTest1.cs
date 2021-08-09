@@ -29,6 +29,7 @@ namespace GitlabSample
             capability.AddAdditionalCapability("browserstack.user", username, true);
             capability.AddAdditionalCapability("browserstack.key", accessKey, true);
             capability.AddAdditionalCapability("browserstack.local", browserstackLocal, true);
+            capability.AddAdditionalCapability("browserstack.localIdentifier", browserstackIdentifier, true);
             driver = new RemoteWebDriver(
               new Uri("https://hub-cloud.browserstack.com/wd/hub/"), capability
             );
